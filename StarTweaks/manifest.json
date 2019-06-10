@@ -1,0 +1,10 @@
+﻿{
+    "Name": "StarTweaks",
+    "Author": "Ridmarg",
+    "Version": "0.1.0-alpha",
+    "Description": "A collection of utility tweaks.",
+    "UniqueID": "Ridmarg.StarTweaks",
+    "EntryDll": "StarTweaks.dll",
+    "MinimumApiVersion": "2.11.2",
+    "UpdateKeys": []
+}
