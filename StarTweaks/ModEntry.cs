@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using StardewModdingAPI;
-using StardewModdingAPI.Events;
-using StardewModdingAPI.Utilities;
-using StardewValley;
-using StardewValley.Menus;
+﻿using StardewModdingAPI;
 
 namespace StarTweaks {
     public class ModEntry : Mod {
 
-        private OptionsMenuExtension extension;
+        private Options.Handler optionsHandler;
+        public static IModHelper helper;
+        public static IMonitor monitor;
 
         public override void Entry(IModHelper Helper) {
-            extension = new OptionsMenuExtension(Helper, this.Monitor);
+            ModEntry.monitor = Monitor;
+            ModEntry.helper = Helper;
+            this.optionsHandler = new Options.Handler();
         }
     }
 }
