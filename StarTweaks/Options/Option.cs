@@ -3,12 +3,10 @@
 namespace StarTweaks.Options {
 
     public class Option {
-        //private string stringid;
         private string label;
         private bool isActive;
 
         public Option(string label, bool defaultbool = true) {
-            //this.stringid = stringid;
             this.label = label;
             this.isActive = defaultbool;
         }
