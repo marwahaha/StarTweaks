@@ -78,7 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\ToolbarToggleUp.png" />
-    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

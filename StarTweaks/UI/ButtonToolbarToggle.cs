@@ -6,7 +6,7 @@ using StardewValley;
 namespace StarTweaks.UI {
     /// <summary>
     /// This is a button this is used in conjunction with <c>CustomToolbar</c> to allow for toggling between the top
-    /// and bottom position for
+    /// and bottom position for the toolbar.
     /// </summary>
     public class ButtonToolbarToggle {
         private readonly Texture2D texture = ModEntry.Helper.Content.Load<Texture2D>("assets/ToolbarToggleUp.png");
@@ -86,7 +86,7 @@ namespace StarTweaks.UI {
         /// <param name="sender">The object from which the event originated.</param>
         /// <param name="e">These are the arguments sent along with the event from SMAPI, contains the Sprite-batch</param>
         private void Display_RenderingHud(object sender, StardewModdingAPI.Events.RenderingHudEventArgs e) {
-            if (Game1.activeClickableMenu == null && Game1.options.pinToolbarToggle && this.ToolbarOption.GetActive()) { 
+            if (Game1.activeClickableMenu == null && Game1.options.pinToolbarToggle && this.ToolbarOption.IsActive) { 
                 e.SpriteBatch.Draw(this.texture, new Vector2(this.Bounds.X, this.Bounds.Y), Color.White);
             }
         }
@@ -99,7 +99,7 @@ namespace StarTweaks.UI {
         /// <param name="sender">The object from which the event originated.</param>
         /// <param name="e">These are the arguments sent along with the event from SMAPI, contains which button was pressed and cursor position.</param>
         private void Input_ButtonPressed(object sender, StardewModdingAPI.Events.ButtonPressedEventArgs e) {
-            if (e.Button == SButton.MouseLeft && this.ToolbarOption.GetActive() &&
+            if (e.Button == SButton.MouseLeft && this.ToolbarOption.IsActive &&
                 this.Bounds.Contains((int) e.Cursor.ScreenPixels.X, (int) e.Cursor.ScreenPixels.Y)) {
 
                 this.ToolbarPositionFlag = !ToolbarPositionFlag;

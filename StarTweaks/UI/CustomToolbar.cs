@@ -15,7 +15,7 @@ namespace StarTweaks.UI {
     /// </summary>
     /// 
     /// <remarks>
-    /// Theoretically maintains compatibility with other mods as it is instantiated based on the existing toolbar at runtime.
+    /// Theoretically maintains compatibility with other mods that edit the toolbar as it is instantiated based on the existing toolbar at runtime.
     /// Contains mostly overridden base game <c>Toolbar class</c> functionality
     /// </remarks>
     public class CustomToolbar : Toolbar {

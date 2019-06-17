@@ -32,7 +32,7 @@ namespace StarTweaks {
             ModEntry.Helper = Helper;
 
             this.optionsHandler = new Options.Handler();
-            this.customToolbar = new UI.CustomToolbar(optionsHandler.optionDictionary[Options.Keys.ToggleToolbarSwitch]);
+            this.customToolbar = new UI.CustomToolbar(optionsHandler.OptionDictionary[Options.Keys.ToggleToolbarSwitch]);
         }
     }
 }
