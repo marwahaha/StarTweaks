@@ -4,7 +4,7 @@ StarTweaks is a utility mod for Stardew&nbsp;Valley, without the addition of any
 
 # Current Features
 
-  - Option to switch locked toolbar position with a button click.git 
+  - Option to switch locked toolbar position with a button click
 
 # TODO
 

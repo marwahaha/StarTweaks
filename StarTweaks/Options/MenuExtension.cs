@@ -7,7 +7,7 @@ namespace StarTweaks.Options {
         IDictionary<string, Option> options;
         public MenuExtension(IDictionary<string, Option> options) {
             this.options = options;
-            ModEntry.helper.Events.Display.MenuChanged += Display_MenuChanged;
+            ModEntry.Helper.Events.Display.MenuChanged += Display_MenuChanged;
         }
 
         private void Display_MenuChanged(object sender, MenuChangedEventArgs e) {
@@ -18,8 +18,8 @@ namespace StarTweaks.Options {
         }
 
         private void addOptions(GameMenu menu) {
-            OptionsPage optionsPage = (OptionsPage) ModEntry.helper.Reflection.GetField<List<IClickableMenu>>(menu, "pages").GetValue()[6];
-            List<OptionsElement> options = ModEntry.helper.Reflection.GetField<List<OptionsElement>>(optionsPage, "options").GetValue();
+            OptionsPage optionsPage = (OptionsPage) ModEntry.Helper.Reflection.GetField<List<IClickableMenu>>(menu, "pages").GetValue()[6];
+            List<OptionsElement> options = ModEntry.Helper.Reflection.GetField<List<OptionsElement>>(optionsPage, "options").GetValue();
 
             options.Add(new OptionsElement("StarTweaks:"));
             foreach(string optionID in this.options.Keys) {

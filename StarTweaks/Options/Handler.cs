@@ -7,13 +7,13 @@ namespace StarTweaks.Options {
         private MenuExtension optionsMenu;
         private ModConfig config;
         public Handler() {
-            this.config = ModEntry.helper.ReadConfig<ModConfig>();
+            this.config = ModEntry.Helper.ReadConfig<ModConfig>();
 
             optionDictionary.Add(Keys.ToggleToolbarSwitch, new Option("Toolbar Switch", this.config.ToggleToolbarSwitch));
 
             optionsMenu = new MenuExtension(optionDictionary);
 
-            ModEntry.helper.Events.Display.MenuChanged += Display_MenuChanged;
+            ModEntry.Helper.Events.Display.MenuChanged += Display_MenuChanged;
         }
 
         private void Display_MenuChanged(object sender, StardewModdingAPI.Events.MenuChangedEventArgs e) {
@@ -23,11 +23,11 @@ namespace StarTweaks.Options {
         }
 
         private void saveOptions() {
-            ModEntry.monitor.Log("Saving Config");
+            ModEntry.Monitor.Log("Saving Config");
 
             this.config.ToggleToolbarSwitch = optionDictionary[Keys.ToggleToolbarSwitch].GetActive();
 
-            ModEntry.helper.WriteConfig(this.config);
+            ModEntry.Helper.WriteConfig(this.config);
         }
     }
 }
