@@ -6,6 +6,7 @@
     public static class Keys {
 
         public const string ToggleToolbarSwitch = "ToggleToolbarSwitch";
+        public const string ToggleCustomSort = "ToggleCustomSort";
 
     }
 }

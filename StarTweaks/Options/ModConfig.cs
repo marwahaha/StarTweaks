@@ -7,5 +7,6 @@
     /// </summary>
     public class ModConfig {
         public bool ToggleToolbarSwitch { get; set; } = true;
+        public bool ToggleCustomSort { get; set; } = true;
     }
 }

@@ -34,6 +34,7 @@ namespace StarTweaks.Options {
             this.config = ModEntry.Helper.ReadConfig<ModConfig>();
 
             OptionDictionary.Add(Keys.ToggleToolbarSwitch, new Option("Toolbar Switch", this.config.ToggleToolbarSwitch));
+            OptionDictionary.Add(Keys.ToggleCustomSort, new Option("Custom Sort Button", this.config.ToggleCustomSort));
 
             optionsMenu = new MenuExtension(OptionDictionary);
 
@@ -58,6 +59,7 @@ namespace StarTweaks.Options {
             ModEntry.Monitor.Log("Saving Config");
 
             this.config.ToggleToolbarSwitch = OptionDictionary[Keys.ToggleToolbarSwitch].IsActive;
+            this.config.ToggleCustomSort = OptionDictionary[Keys.ToggleCustomSort].IsActive;
 
             ModEntry.Helper.WriteConfig(this.config);
         }

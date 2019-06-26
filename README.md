@@ -17,6 +17,10 @@ StarTweaks is a utility mod for Stardew&nbsp;Valley, without the addition of any
   - XP Bar, and/or numbers, until next level for each skill.
   - Alternative inventory sort that does not sort the toolbar.
 
+# Known Issues
+
+  - Custom sort button is slightly greyed out due to being behind the menu overlay.
+
 ### Installation
 
 StarTweaks requires [SMAPI v2.11.2+](https://smapi.io/) to run.

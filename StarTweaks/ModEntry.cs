@@ -9,6 +9,7 @@ namespace StarTweaks {
 
         private Options.Handler optionsHandler;
         private UI.CustomToolbar customToolbar;
+        private UI.CustomSort customSort;
 
         /// <summary> 
         /// This provides an easy access reference to the SMAPI Helper object.
@@ -33,6 +34,7 @@ namespace StarTweaks {
 
             this.optionsHandler = new Options.Handler();
             this.customToolbar = new UI.CustomToolbar(optionsHandler.OptionDictionary[Options.Keys.ToggleToolbarSwitch]);
+            this.customSort = new UI.CustomSort(optionsHandler.OptionDictionary[Options.Keys.ToggleCustomSort]);
         }
     }
 }
