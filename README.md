@@ -10,7 +10,7 @@ StarTweaks is a utility mod for Stardew&nbsp;Valley, without the addition of any
 
   - Method to remove water from the farm.
   - Ability to pick up and move chests.
-  - Abilty to place flooring under placed items, such as chests or sprinklers.
+  - Ability to place flooring under placed items, such as chests or sprinklers.
   - Ingame Notepad, with a daily reminders options.
   - Quick stack to nearby chests.
   - Search bar for crafting.
